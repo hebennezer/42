@@ -1,15 +1,15 @@
 #include <unistd.h>
 
-int main(void)
+int	main(void)
 {
-    char    c;
-
-    c = '9';
-    while (c >= '0')
-    {
-        write (1, &c\n, 2);
-        c--;
-    }
-    write (1, "\n", 1);
-    return (0);
+	char	i;
+	
+	i = '9';
+	while (i >= '0')
+	{
+		write(1, &i, 1);
+		i--;
+	}	
+	write(1, "\n", 1);
+	return (0);
 }

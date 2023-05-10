@@ -2,17 +2,17 @@
 
 int	main(void)
 {
-	char	i;
-	char	j;
+	int	i;
+	int j;
 
-	i = 'a';
-	j = 'B';
-	while (j <= 'Z')
+	i = 'z';
+	j = 'Y';
+	while (j >= 'A')
 	{
 		write(1, &i, 1);
 		write(1, &j, 1);
-		i += 2;
-		j += 2;
+		i -= 2;
+		j -= 2;
 	}
 	write(1, "\n", 1);
 	return (0);
